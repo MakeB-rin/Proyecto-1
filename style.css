@@ -1,24 +1,29 @@
+/*Especificar los bordes de la pagina*/
 *{
     box-sizing: border-box;
 }
 
 
-
+/*Desplazamiento suave a secciones*/
 html{
     scroll-behavior: smooth;
 }
 
+/*tamaños generales de toda la pagina*/
 h1{ font-size: 3.5em; }
 h2{ font-size: 2.7em; }
 h3{ font-size: 1.5em; }
 p{ font-size: 1.25em; }
 ul{ list-style: none; }
 
+
+/*Tipo de letra*/
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
+/*Botones generales*/
 button{
     font-size: 1.5em;
     font-weight: bold;
@@ -29,6 +34,7 @@ button{
     background-color: blueviolet;
 }
 
+/*Boton al acercar el mouse se vuelve mas oscuro*/
 button:hover{
     background-color: rgb(93, 24, 157);
 }
@@ -39,10 +45,11 @@ button:hover{
     margin: auto;
 }
 
+/* Color de la cabecera */
 header{
     background-color: rgb(240, 240, 240);
 }
-
+/* logo */
 header .logo{
     margin: 0;
     padding: 25px  30px;
@@ -51,12 +58,14 @@ header .logo{
     font-size: 1.5em;
 }
 
+/* Cabecera opciones modo movil */
 header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Cabecera las opciones en el centro movil */
 header nav{
     display: flex;
     flex-direction: column;
@@ -64,6 +73,7 @@ header nav{
     padding-bottom: 25px;
 }
 
+/* las opciones, el espaciado */
 header a{
     padding: 5px 12px;
     text-decoration: none;
@@ -71,10 +81,12 @@ header a{
     color: black;
 }
 
+/* las opciones con sombra */
 header a:hover{
     color: blueviolet;
 }
 
+/* las letras del centro con el boton y la imagen*/
 #hero {
     display: flex;
     align-items: center;
@@ -92,25 +104,28 @@ header a:hover{
     background-position: center center;
 }
 
+/* las letras del h1 de la clase hero*/
 #hero h1{
     font-size: 3em;
     color: white;
 }
-
+/* Los botones del h1 de la clase hero*/
 #hero button{
     font-size: 1em;
     
 }
-
+/* centrar y el tamaño de la seccion somos proy */
 #somos-proy .container{
     text-align: center;
     padding: 200px 12px;
 }
 
+/* Dar color a somos Programa Ya! */
 .color-acento{
     color: blueviolet;
 }
 
+/* Imagen de fondo y titulo de la seccion nuestros programas*/
 #nuestros-programas{
     background-image: linear-gradient(
         0deg, 
@@ -131,11 +146,12 @@ header a:hover{
     margin-top: 0;
     font-size: 3.2em;
 }
+/* Borra el parrafo de las cartas en modo movil*/
 
 #nuestros-programas p{
     display: none;
 }
-
+/* el parrafo de las cartas en modo movil tamaño*/
 #nuestros-programas .carta{
     background-position: center center;
     background-size: cover;
@@ -143,7 +159,7 @@ header a:hover{
     margin: 20px;
     border-radius: 15px;
 }
-
+/* Primera carta y fondo de pantalla movil tamaño*/
 .carta:first-child{
     background-image: linear-gradient(
         0deg,
@@ -153,6 +169,7 @@ header a:hover{
 
     
 }
+
 .carta:nth-child(2){
     background-image: linear-gradient(
         0deg,
@@ -161,6 +178,7 @@ header a:hover{
         ), url("img/imagen2-cortado.png");
 
 }
+
 .carta:nth-child(3){
     background-image: linear-gradient(
         0deg,
@@ -168,6 +186,7 @@ header a:hover{
         rgba(0,0,0,0.5)
         ), url("img/imagen3-cortado.png");
 }
+
 
 #caracteristicas .container{
     text-align: center;
@@ -217,7 +236,7 @@ footer .container{
     justify-content: right;
     align-items: flex-end;
 }
-
+/* Pagina tamaño normal*/
 @media (min-width: 1000px){
     header{
         position: fixed;
@@ -329,7 +348,7 @@ footer .container{
         text-align: right;
     }
 
-    
+    /* Pagina tamaño normal la clase caracteristicas (la imagen cuando se junta con las letras con la imagen)*/
     @media(min-width: 1400px){
         #caracteristicas{
             background-position-x:  calc(100vw - 800px);
