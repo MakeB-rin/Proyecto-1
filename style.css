@@ -47,7 +47,7 @@ button:hover{
 
 /* Color de la cabecera */
 header{
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(24, 25, 25);
 }
 /* logo */
 header .logo{
@@ -78,7 +78,7 @@ header a{
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: rgb(228, 216, 216);
 }
 
 /* las opciones con sombra */
@@ -93,7 +93,7 @@ header a:hover{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
     background-image: linear-gradient(
         0deg, 
         rgba(0,0,0,0.5),
@@ -107,7 +107,7 @@ header a:hover{
 /* las letras del h1 de la clase hero*/
 #hero h1{
     font-size: 3em;
-    color: white;
+    color: rgb(228, 220, 220);
 }
 /* Los botones del h1 de la clase hero*/
 #hero button{
@@ -236,6 +236,7 @@ footer .container{
     justify-content: right;
     align-items: flex-end;
 }
+
 /* Pagina tamaño normal*/
 @media (min-width: 1000px){
     header{
@@ -247,6 +248,7 @@ footer .container{
         flex-direction: row;
         justify-content: space-between;
     }
+
 
     #hero h1{
         font-size: 3.5em;
